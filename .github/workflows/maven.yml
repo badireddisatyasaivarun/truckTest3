@@ -24,7 +24,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - run: cd ~/actions-runner-3/deploy/truckTest3/truckTest3
+    - run: cd ~/actions-runner-3/deploy/truck/truckTest3/truckTest3
     - run: sudo docker container stop test || true
     - run: sudo docker container stop docker-postgres || true
     - run: sudo docker container prune -f
